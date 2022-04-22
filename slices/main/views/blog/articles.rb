@@ -7,7 +7,8 @@ module Main
     module Blog
       class Articles < View::Base
         expose :articles do
-          binding.irb
+          require 'debug'
+          binding.break
           %w[article1 article2 article3].map do |title|
             Article.new(title)
           end

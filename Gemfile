@@ -44,6 +44,7 @@ group :development, :test do
   gem "guard-rack", "~> 2.2"
   gem "pry"
   gem "standard"
+  gem "debug", "~> 1.5.0"
 end
 
 # Test
