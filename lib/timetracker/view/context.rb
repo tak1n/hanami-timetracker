@@ -2,7 +2,7 @@
 
 require "hanami/view/context"
 
-module AppPrototype
+module Timetracker
   module View
     class Context < Hanami::View::Context
     end

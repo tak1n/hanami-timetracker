@@ -3,7 +3,7 @@
 require "dry/monads"
 require "dry/matcher/result_matcher"
 
-module AppPrototype
+module Timetracker
   class Operation
     include Dry::Monads[:result, :try]
 

@@ -2,11 +2,13 @@
 
 require "hanami/application/routes"
 
-module AppPrototype
+module Timetracker
   class Routes < Hanami::Application::Routes
     define do
       slice :main, at: "/" do
         root to: "home.show"
+        # get '/articles', to: ->(env) { [200, {}, ['<h1>Articles</articles>']] }
+        get "/articles", to: "blog.articles"
       end
     end
   end

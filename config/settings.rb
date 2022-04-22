@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require "app_prototype/types"
+require "timetracker/types"
 require "hanami/application/settings"
 
-module AppPrototype
+module Timetracker
   class Settings < Hanami::Application::Settings
     # Database
     setting :database_url, constructor: Types::String

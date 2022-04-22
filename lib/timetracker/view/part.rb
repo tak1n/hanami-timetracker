@@ -2,7 +2,7 @@
 
 require "hanami/view/part"
 
-module AppPrototype
+module Timetracker
   module View
     class Part < Hanami::View::Part
     end

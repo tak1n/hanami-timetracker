@@ -2,7 +2,7 @@
 
 require "hanami/action"
 
-module AppPrototype
+module Timetracker
   module Action
     class Base < Hanami::Action
     end
