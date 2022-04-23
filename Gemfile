@@ -7,44 +7,45 @@ gem "rake", "~> 13.0"
 
 # Application framework
 gem "hanami", "~> 2.0.0.alpha"
-gem "hanami-cli", "~> 2.0.0.alpha"
+# gem "hanami-cli", "~> 2.0.0.alpha"
+gem "hanami-cli", github: "hanami/cli"
 gem "hanami-controller", "~> 2.0.alpha"
 gem "hanami-router", "~> 2.0.0.alpha"
 gem "hanami-utils", "~> 2.0.0.alpha"
 gem "hanami-view", "~> 2.0.0.alpha"
 
 # HTTP
-gem "puma", "~> 5.6"
 gem "down", "~> 5.1"
+gem "puma", "~> 5.6"
 
 # Database
 gem "pg"
-gem "sqlite3"
 gem "rom", "~> 5.2"
 gem "rom-sql", "~> 3.2"
 gem "sequel", "~> 5.32"
+gem "sqlite3"
 
 # Application
+gem "dry-configurable", "~> 0.13"
 gem "dry-matcher", "~> 0.8"
 gem "dry-monads", "~> 1.2"
 gem "dry-struct", "~> 1.0"
+gem "dry-transformer", "~> 0.1"
 gem "dry-types", "~> 1.0"
 gem "dry-validation", "~> 1.4"
-gem "dry-transformer", "~> 0.1"
-gem "dry-configurable", "~> 0.13"
 gem "erbse", "~> 0.1"
 gem "i18n", "~> 1.8"
 gem "slim", "~> 4.0"
 
 # Development/test
 group :development, :test do
-  gem "pry-byebug"
   gem "break", "~> 0.21"
+  gem "debug", "~> 1.5.0"
   gem "dotenv", "~> 2.7"
   gem "guard-rack", "~> 2.2"
   gem "pry"
+  gem "pry-byebug"
   gem "standard"
-  gem "debug", "~> 1.5.0"
 end
 
 # Test

@@ -1,3 +1,14 @@
+GIT
+  remote: https://github.com/hanami/cli.git
+  revision: 752cc5d64bbddc56e5a1eeae9c5ba6396df06e66
+  specs:
+    hanami-cli (2.0.0.alpha7)
+      bundler (~> 2.1)
+      dry-cli (~> 0.6)
+      dry-files (~> 0.1)
+      dry-inflector (~> 0.2)
+      rake (~> 13.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -145,12 +156,6 @@ GEM
       hanami-cli (~> 2.0.alpha)
       hanami-utils (~> 2.0.alpha)
       zeitwerk (~> 2.4)
-    hanami-cli (2.0.0.alpha7)
-      bundler (~> 2.1)
-      dry-cli (~> 0.6)
-      dry-files (~> 0.1)
-      dry-inflector (~> 0.2)
-      rake (~> 13.0)
     hanami-controller (2.0.0.alpha6)
       dry-configurable (~> 0.13, >= 0.13.0)
       hanami-utils (~> 2.0.alpha)
@@ -349,7 +354,7 @@ DEPENDENCIES
   erbse (~> 0.1)
   guard-rack (~> 2.2)
   hanami (~> 2.0.0.alpha)
-  hanami-cli (~> 2.0.0.alpha)
+  hanami-cli!
   hanami-controller (~> 2.0.alpha)
   hanami-router (~> 2.0.0.alpha)
   hanami-utils (~> 2.0.0.alpha)

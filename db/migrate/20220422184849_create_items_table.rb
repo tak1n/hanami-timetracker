@@ -9,6 +9,8 @@ ROM::SQL.migration do
       column :start_date, DateTime
       column :end_date, DateTime
       column :duration, Integer, null: false
+      column :created_at, DateTime, null: false
+      column :updated_at, DateTime, null: false
     end
   end
 end
