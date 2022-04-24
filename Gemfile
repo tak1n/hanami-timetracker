@@ -34,6 +34,7 @@ gem "dry-transformer", "~> 0.1"
 gem "dry-types", "~> 1.0"
 gem "dry-validation", "~> 1.4"
 gem "erbse", "~> 0.1"
+gem "faker", "~> 2.20"
 gem "i18n", "~> 1.8"
 gem "slim", "~> 4.0"
 

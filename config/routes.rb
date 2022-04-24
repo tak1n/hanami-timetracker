@@ -8,7 +8,8 @@ module Timetracker
       slice :main, at: "/" do
         root to: "home.show"
         # get '/articles', to: ->(env) { [200, {}, ['<h1>Articles</articles>']] }
-        get "/articles", to: "blog.articles"
+        # get "/articles", to: "blog.articles"
+        get "/items", to: "items.index"
       end
     end
   end

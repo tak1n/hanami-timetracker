@@ -1,0 +1,25 @@
+#content
+  p This example shows you how a basic Slim file looks.
+
+  - if items.any?
+    table#items
+      - items.each do |item|
+        tr
+          td.title
+            | #{item.title}
+          td.description
+            | #{item.description}
+          td.start_date
+            | #{item.start_date}
+          td.end_date
+            | #{item.end_date}
+          td.duration
+            | #{item.duration / 60} min
+          td.created_at
+            | #{item.created_at}
+          td.updated_at
+            | #{item.updated_at}
+
+  - else
+    p No items found. Please add some inventory.
+      Thank you!

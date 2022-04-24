@@ -1,7 +1,7 @@
 module Main
   module Actions
-    module Blog
-      class Articles < Action::Base
+    module Items
+      class Index < Action::Base
       end
     end
   end
