@@ -7,6 +7,7 @@ module Main
         ]
 
         def handle(req, res)
+          Hanami.logger.debug "TestLog"
           res.render view, items: repo.all
         end
       end
