@@ -1,0 +1,18 @@
+<h1>Timetrackings</h1>
+  <% if items.any? %>
+    <table>
+      <% items.each do |item| %>
+        <tr>
+          <td class="title"><%= item.title %></td>
+          <td class="description"><%= item.description %></td>
+          <td class="start_date"><%= item.start_date %></td>
+          <td class="end_date"><%= item.end_date %></td>
+          <td class="duration"><%= "#{item.duration / 60}min}" %></td>
+          <td class="created_at"><%= item.created_at %></td>
+          <td class="updated_at"><%= item.updated_at %></td>
+        </tr>
+      <% end %>
+    </table>
+  <% else %>
+    <p>No items found. Please add some inventory. Thank you!</p>
+  <% end %>
