@@ -1,4 +1,15 @@
 <h1 class="title">Timetrackings</h1>
+  <nav class="breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li class="is-active">
+        <a href='/articles' aria-current='page'>Timetrackings</a>
+      </li>
+    </ul>
+  </nav>
+
   <% if items.any? %>
     <table>
       <% items.each_slice(3) do |row| %>
