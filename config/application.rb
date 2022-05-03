@@ -11,9 +11,6 @@ module Timetracker
     }
 
     config.actions.content_security_policy[:default_src] = "'self' http://localhost:8080"
-    # config.actions.content_security_policy[:style_src_elem] = "'self' 'unsafe-inline' https: http://localhost:8080"
-    # config.actions.content_security_policy[:script_src_elem] = "'self' http://localhost:8080"
-
     # config.actions.default_headers = {
     #   "X-Frame-Options" => "DENY",
     #   "X-Content-Type-Options" => "nosniff",
