@@ -39,6 +39,9 @@ gem "faker", "~> 2.20"
 gem "i18n", "~> 1.8"
 gem "slim", "~> 4.0"
 
+gem "alba"
+gem "oj"
+
 # Development/test
 group :development, :test do
   gem "break", "~> 0.21"

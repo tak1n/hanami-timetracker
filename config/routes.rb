@@ -10,6 +10,7 @@ module Timetracker
         # get '/articles', to: ->(env) { [200, {}, ['<h1>Articles</articles>']] }
         # get "/articles", to: "blog.articles"
         get "/items", to: "items.index"
+        get "/items/:id", to: "items.show"
         post "/items", to: "items.create"
       end
     end
