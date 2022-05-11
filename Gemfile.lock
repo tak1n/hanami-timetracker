@@ -1,3 +1,73 @@
+GIT
+  remote: https://github.com/hanami/cli.git
+  revision: 752cc5d64bbddc56e5a1eeae9c5ba6396df06e66
+  specs:
+    hanami-cli (2.0.0.alpha7)
+      bundler (~> 2.1)
+      dry-cli (~> 0.6)
+      dry-files (~> 0.1)
+      dry-inflector (~> 0.2)
+      rake (~> 13.0)
+
+GIT
+  remote: https://github.com/hanami/controller.git
+  revision: a9772771041018e1d1c6591ec05c8accf8e54053
+  specs:
+    hanami-controller (2.0.0.alpha6)
+      dry-configurable (~> 0.13, >= 0.13.0)
+      hanami-utils (~> 2.0.alpha)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/hanami.git
+  revision: 7489a581e9b48ffb030e556a50de61888668a267
+  specs:
+    hanami (2.0.0.alpha7.1)
+      bundler (>= 1.16, < 3)
+      dry-configurable (~> 0.12, >= 0.12.1)
+      dry-core (~> 0.4)
+      dry-inflector (~> 0.2, >= 0.2.1)
+      dry-monitor
+      dry-system (~> 0.23, >= 0.23.0)
+      hanami-cli (~> 2.0.alpha)
+      hanami-utils (~> 2.0.alpha)
+      zeitwerk (~> 2.4)
+
+GIT
+  remote: https://github.com/hanami/router.git
+  revision: 19d492cb49fb5aa522e54f45e6390452af9a6911
+  specs:
+    hanami-router (2.0.0.alpha6)
+      mustermann (~> 1.0)
+      mustermann-contrib (~> 1.0)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/utils.git
+  revision: 7ef19f3ad550dd0b0fc902111fa9f608a3833073
+  specs:
+    hanami-utils (2.0.0.alpha6)
+      concurrent-ruby (~> 1.0)
+      dry-transformer (~> 0.1)
+
+GIT
+  remote: https://github.com/hanami/validations.git
+  revision: eec36c6961be9f07d53880851ac1d7e7eef53ae7
+  specs:
+    hanami-validations (2.0.0.alpha2)
+      dry-validation (~> 1.6)
+
+GIT
+  remote: https://github.com/hanami/view.git
+  revision: a5bd7d25bc25de91aaf133be6405902e09257eb0
+  specs:
+    hanami-view (2.0.0.alpha7)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.13, >= 0.13.0)
+      dry-core (~> 0.5, >= 0.5)
+      dry-inflector (~> 0.1)
+      tilt (~> 2.0, >= 2.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -136,39 +206,6 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
-    hanami (2.0.0.alpha7.1)
-      bundler (>= 1.16, < 3)
-      dry-configurable (~> 0.12, >= 0.12.1)
-      dry-core (~> 0.4)
-      dry-inflector (~> 0.2, >= 0.2.1)
-      dry-monitor
-      dry-system (~> 0.23, >= 0.23.0)
-      hanami-cli (~> 2.0.alpha)
-      hanami-utils (~> 2.0.alpha)
-      zeitwerk (~> 2.4)
-    hanami-cli (2.0.0.alpha7)
-      bundler (~> 2.1)
-      dry-cli (~> 0.6)
-      dry-files (~> 0.1)
-      dry-inflector (~> 0.2)
-      rake (~> 13.0)
-    hanami-controller (2.0.0.alpha6)
-      dry-configurable (~> 0.13, >= 0.13.0)
-      hanami-utils (~> 2.0.alpha)
-      rack (~> 2.0)
-    hanami-router (2.0.0.alpha6)
-      mustermann (~> 1.0)
-      mustermann-contrib (~> 1.0)
-      rack (~> 2.0)
-    hanami-utils (2.0.0.alpha6)
-      concurrent-ruby (~> 1.0)
-      dry-transformer (~> 0.1)
-    hanami-view (2.0.0.alpha7)
-      concurrent-ruby (~> 1.0)
-      dry-configurable (~> 0.13, >= 0.13.0)
-      dry-core (~> 0.5, >= 0.5)
-      dry-inflector (~> 0.1)
-      tilt (~> 2.0, >= 2.0.6)
     hansi (0.2.0)
     http_parser.rb (0.6.0)
     i18n (1.10.0)
@@ -352,12 +389,13 @@ DEPENDENCIES
   erbse (~> 0.1)
   faker (~> 2.20)
   guard-rack (~> 2.2)
-  hanami (~> 2.0.0.alpha)
-  hanami-cli (~> 2.0.0.alpha)
-  hanami-controller (~> 2.0.alpha)
-  hanami-router (~> 2.0.0.alpha)
-  hanami-utils (~> 2.0.0.alpha)
-  hanami-view (~> 2.0.0.alpha)
+  hanami!
+  hanami-cli!
+  hanami-controller!
+  hanami-router!
+  hanami-utils!
+  hanami-validations!
+  hanami-view!
   i18n (~> 1.8)
   oj
   pg
