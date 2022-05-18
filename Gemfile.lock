@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/controller.git
-  revision: a9772771041018e1d1c6591ec05c8accf8e54053
+  revision: 5d19808b8ca958263141adb4d0fe99e996af7212
   specs:
     hanami-controller (2.0.0.alpha6)
       dry-configurable (~> 0.13, >= 0.13.0)
@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/hanami.git
-  revision: 7489a581e9b48ffb030e556a50de61888668a267
+  revision: c23dd5343ff761ca1522002d66888c1c424df5cf
   specs:
     hanami (2.0.0.alpha7.1)
       bundler (>= 1.16, < 3)

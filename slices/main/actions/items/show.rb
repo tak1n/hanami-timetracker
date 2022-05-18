@@ -3,22 +3,27 @@ module Main
     module Items
       class Show < Action::Base
         include Deps[
-          repo: "repositories.items"
+          repo: "repositories.items",
+          logger: "application.logger"
         ]
 
         before :set_headers
 
-        # TODO: params validation does not work
-        # raises:
-        # NoMethodError at /items/1
-        # undefined method `params' for Main::Actions::Items::Show:Class params do ^^^^^^
-        # /home/benjamin/dev/github/hanami-timetracker/slices/main/actions/items/show.rb: in <class:Show>, line 14
-        #
-        # params do
-        #   required(:id).value(:integer)
-        # end
+        params do
+          required(:id).value(:integer)
+        end
 
         def handle(req, res)
+          require "debug"
+          binding.break
+          logger.info(req.params.env["REQUEST_URI"])
+          logger.info("Params: #{req.params.to_h}")
+          logger.info("Raw params: #{req.params.raw}")
+          logger.info(req.params[:id])
+          logger.info(req.params.get(:id))
+          logger.info(req.params[:testparam])
+          logger.info(req.params.get(:testparam))
+
           item = repo.find(req.params[:id])
           res.body = Serializers::Item.new(item).serialize
         end
