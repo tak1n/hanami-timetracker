@@ -6,8 +6,6 @@ module Main
       root_key :item
 
       attributes :id, :title, :description, :duration
-                 # :start_date, :end_date, :created_at,
-                 # :updated_at
 
       attribute :duration_in_min do |resource|
         resource.duration / 60

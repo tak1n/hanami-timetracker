@@ -14,23 +14,18 @@ module Main
         end
 
         def handle(req, res)
-          require "debug"
-          binding.break
-          logger.info(req.params.env["REQUEST_URI"])
-          logger.info("Params: #{req.params.to_h}")
-          logger.info("Raw params: #{req.params.raw}")
-          logger.info(req.params[:id])
-          logger.info(req.params.get(:id))
-          logger.info(req.params[:testparam])
-          logger.info(req.params.get(:testparam))
-
-          item = repo.find(req.params[:id])
-          res.body = Serializers::Item.new(item).serialize
+          if req.params.valid?
+            item = repo.find(req.params[:id])
+            res.body = Serializers::Item.new(item).serialize
+          else
+            res.body   = { errors: req.params.errors }.to_json
+            res.status = 400
+          end
         end
 
         private
 
-        def set_headers(req, res)
+        def set_headers(_req, res)
           res.headers["Content-Type"] = "application/json"
         end
       end
